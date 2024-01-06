@@ -116,30 +116,30 @@ public class ArrayProgram {
         nprint(x);
 
 
-        insertValue(x);
+        insertValue(arr);
         System.out.print("After insert value : ");
-        nprint(x);
+        nprint(arr);
 
 
-        int sum = sumArray(x);
+        int sum = sumArray(arr);
         System.out.println("\nSum of array elements: " + sum);
 
 
-        double avg = calculateAverage(x);
+        double avg = calculateAverage(arr);
         System.out.println("Average of array elements: " + avg);
 
 
-        int max = Max(x);
+        int max = Max(arr);
         System.out.println("Maximum value in the array: " + max);
 
 
-        int min = Min(x);
+        int min = Min(arr);
         System.out.println("Minimum value in the array: " + min);
 
 
         try {
             // Finding and printing the second maximum value
-            int secondMax = SecondMax(x);
+            int secondMax = SecondMax(arr);
             System.out.println("Second maximum value in the array: " + secondMax);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
@@ -148,21 +148,21 @@ public class ArrayProgram {
 
         try {
             // Finding and printing the second minimum value
-            int secondMin = SecondMin(x);
+            int secondMin = SecondMin(arr);
             System.out.println("Second minimum value in the array: " + secondMin);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
 
 
-        asdSorting(x);
+        sortAscending(arr);
         System.out.print("asdSorting :");
-        nprint(x);
+        nprint(arr);
 
 
-        deSorting(x);
+        sortDescending(arr);
         System.out.print("deSorting :");
-        nprint(x);
+        nprint(arr);
 
 
     }
